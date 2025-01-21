@@ -31,10 +31,11 @@
                 <button id="backbtn"><i class="fa-solid fa-arrow-left"></i></button>
                 <div class="serchb-section">
                     <div id="serch-sign"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <input placeholder="What do you want to play?" id="searchBox" id="myinput">
-                <button id="cross"><i class="fa-regular fa-circle-xmark"></i></button>
+                    <input placeholder="What do you want to play?" id="searchBox" id="myinput">
+                    <button id="cross"><i class="fa-regular fa-circle-xmark"></i></button>
+                </div>
             </div>
-            </div>
+            
         </div>
 
 
@@ -43,7 +44,8 @@
         <div id="popUp">
             <div class="welcome-container">
                 <h1>WARNING!</h1>
-                <p>In This Music Player Limited Song <br>If your Song not found please refresh the screen or  <br> press Home  Button. ! </p>
+                <p>In This Music Player Limited Song <br>If your Song not found please refresh the screen or <br> press
+                    Home Button. ! </p>
             </div>
         </div>
         <!-- Left side -->
@@ -170,9 +172,8 @@
                                     <div class="play_btn"><button><i class="fa-solid fa-play"></i></button></div>
                                 </div>
 
-                                <div class="playlistInnerDivs search_filter " id="song2"
-                                    src="home page songs/WAVY.mp3"><img
-                                        src="https://i.scdn.co/image/ab67616d00001e02e34f05599c4a42e1cbb1c251"
+                                <div class="playlistInnerDivs search_filter " id="song2" src="home page songs/WAVY.mp3">
+                                    <img src="https://i.scdn.co/image/ab67616d00001e02e34f05599c4a42e1cbb1c251"
                                         class="Music-imag">
                                     <div class="SongName">Wavy</div>
                                     <div class="artistName">Karan Aulja ,Mrxci</div>
@@ -456,8 +457,8 @@
                             </div>
 
                             <!-- Communities Section -->
-                            
-                            
+
+
 
                             <!-- Gana BajaO Plans Section -->
                             <div class="footer-column">
@@ -512,6 +513,25 @@
                         <span id="artistName-left"></span>
                         <span id="time-left"></span>
                     </div>
+                    
+        <div id="footerPart">
+            <div class="controls">
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" class="progress-bar" value="0">
+                    <span id="duration">0:00</span>
+                </div>
+                <div id="btnsCntrol">
+                    <button id="prev" class="control-btn"><i class="fa-solid fa-forward fa-flip-horizontal"
+                            ></i></button>
+                    <button id="play" class="control-btn"><i class="fa-solid fa-play"
+                            ></i></button>
+                    <button id="next" class="control-btn"><i class="fa-solid fa-forward"
+                            ></i></button>
+                </div>
+                
+            </div>
+        </div>
                     <div id="left-SongInfo2">
                         <div class="credit_1">
                             <h3>Credit</h3>
@@ -536,7 +556,7 @@
                         <div id="songImg_q">
                             <img src="" id="songImgDesplay_q">
                         </div>
-                        <div id=" songNameInfo">
+                        <div id=" songNameInfo2">
                             <span id="SongName_q"></span>
                             <span id="artistName_q"></span>
                         </div>
@@ -557,24 +577,6 @@
 
 
 
-        
-        <div id="footerPart">
-            <div class="controls">
-                <div id="btnsCntrol">
-                    <button id="prev" class="control-btn"><i class="fa-solid fa-forward fa-flip-horizontal"
-                            style="color: #ffffff;"></i></button>
-                    <button id="play" class="control-btn"><i class="fa-solid fa-play"
-                            style="color: #ffffff;"></i></button>
-                    <button id="next" class="control-btn"><i class="fa-solid fa-forward"
-                            style="color: #ffffff;"></i></button>
-                </div>
-                <div class="progress-container">
-                    <span id="current-time">0:00</span>
-                    <input type="range" id="progress-bar" class="progress-bar" value="0">
-                    <span id="duration">0:00</span>
-                </div>
-            </div>
-        </div>
 
 
 
@@ -583,24 +585,26 @@
 
 
 
-        <div class="btnsShow">
-            <div class="song-info">
-                <div id="songImg">
-                    <img src="" id="songImgDesplay">
-                </div>
-                <div id="songNameInfo">
-                    <span id="SongName">hii</span>
-                    <span id="artistName">hi</span>
+
+
+        <div class="music-btm">
+            <div class="btnsShow">
+                <div class="song-info">
+                    <div id="songImg">
+                        <img src="" id="songImgDesplay">
+                    </div>
+                    <div id="songNameInfo">
+                        <span id="SongName">hii</span>
+                        <span id="artistName">hi</span>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="shoeFooter">
-            <a href="index.html" class="HomeBtn"><i class="fa-solid fa-house"></i></a>
-            <button class="HomeBtn" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <a href="" class="HomeBtn"><i class="fa-brands fa-instagram"></i></a>
-            <a href="" class="HomeBtn"><i class="fa-brands fa-snapchat"></i></a>
+            <div class="shoeFooter">
+                <a href="index.html" class="HomeBtn"><i class="fa-solid fa-house"></i></a>
+                <button class="HomeBtn" id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <a href="" class="HomeBtn"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="HomeBtn"><i class="fa-brands fa-snapchat"></i></a>
+            </div>
         </div>
         <audio id="audio" src=""></audio>
     </div>

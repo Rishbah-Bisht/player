@@ -11,8 +11,8 @@
 .leftSide {
   width: 100%;
   height: 100%;
-  border-radius: 30px;
-  margin: 10px 0;
+  padding: 0 12px;
+  
   background-color: #b94646;
   display: flex;
   justify-content: center;
@@ -21,13 +21,14 @@
   align-items: flex-start;
   display: none;
   overflow-y: scroll;
-
+overflow-x: hidden;
+border-radius: 0px;
 }
 
 #left-SongInfo {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   background-color: transparent;
   margin-top: 10px;
   font-size: 2rem;
@@ -46,9 +47,8 @@
 
 #SongName-left {
   width: 100%;
-  font-size: 4rem;
+  font-size: 20px;
   color: white;
-  margin-bottom: 50px;
   background-color: transparent;
   white-space: nowrap;
   overflow: hidden;
@@ -57,44 +57,50 @@
 }
 
 #artistName-left {
-  font-size: 3rem;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.408);
 }
 
 #left-SongInfo2 {
-  width: 85%;
+  width: 100%;
   background-color: rgb(45, 45, 45);
-  margin: 50px 10px 10px 10px;
-  border-radius: 30px;
-  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
 
 }
 
 #leftside {
   width: 100%;
-  margin: 50px;
-  border-radius: 40px;
+  margin: 10px 20px;
+  border-radius: 5px;
 }
 
 #leftSideDivePosition {
   background-color: transparent;
   width: 100%;
-  height: 60px;
+  height: 30px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 10px;
-  margin: 50px;
+  padding: 0px 10px;
+  margin: 20px 0px 0 0 ;
 }
 
 #leftSideDivePosition .allHead {
-  font-size: 5rem;
+  font-size: 20px;
   color: white;
+  white-space: nowrap;
+  /* Prevent text from wrapping to the next line */
+  overflow: hidden;
+  /* Hide any text that overflows the container */
+  text-overflow: ellipsis;
+width: 280px;
+
 }
 
 .crossbtn {
-  width: 50px;
-  height: 50px;
-  font-size: 4rem;
+
+  font-size: 20px;
   position: relative;
   border: none;
   background-color: transparent;
@@ -112,9 +118,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  line-height: 4.5rem;
-  font-size: 3rem;
-  padding: 0 10px 0 10px;
+
+  font-size: 2rem;
+  padding: 0px;
   white-space: nowrap;
   /* Prevent text from wrapping to the next line */
   overflow: hidden;
@@ -151,8 +157,7 @@
 .credit_1 {
   display: flex;
   justify-content: left;
-  margin: 30px 0;
-  width: 90%;
+  width: 100%;
 }
 
 .credit_3 {
@@ -162,6 +167,7 @@
 
 .credit_2 {
   width: 100%;
+  font-size: 25px;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -170,6 +176,7 @@
 
 .credit_4 {
   width: 100%;
+  font-size: 20px;
   background-color: transparent;
   align-items: center;
   color: rgba(255, 255, 255, 0.413);
@@ -184,6 +191,7 @@
 body {
   margin: 0;
   background-color: #000000;
+
 }
 
 #navBar {
@@ -255,17 +263,7 @@ body {
 
 }
 
-.playlist {
-  height: auto;
-  width: 100%;
-  background-color: #121212;
-  display: flex;
-  flex-wrap: wrap;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  border-top-left-radius: 10px;
-  padding: 0;
-}
+
 
 #playlist {
   height: auto;
@@ -300,6 +298,7 @@ body {
   overflow-x: scroll;
   white-space: nowrap;
   position: relative;
+  overflow-y: hidden;
 }
 
 .container_ {
@@ -340,7 +339,7 @@ body {
 
 
 .SongName {
-  width: 100px;
+  width: 100%;
   background-color: #ffffff;
   font-size: 16px;
   font-weight: 400;
@@ -370,10 +369,6 @@ body {
 
 
 
-.playlistInnerDivs .active {
-  box-shadow: 1px 2px 10px;
-  font-weight: bold;
-}
 
 .song-info {
   background-color: transparent;
@@ -382,8 +377,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin: 5px 0;
+  height: 70px;
 
 }
 
@@ -397,29 +392,23 @@ body {
 }
 
 
-#songNameInfo {
-  width: 75%;
-  height: 70px;
-  background-color: transparent;
-  text-align: left;
 
-}
 
 #SongName,
 #artistName {
   background-color: transparent;
   width: 80%;
   /* Limit the width to 200px */
-  font-size: 1.1rem;
+  font-size: 16px;
   font-weight: 500;
   height: 20px;
   display: inline-block;
-  /* Make it behave like a block element */
+
   text-align: left;
   color: white;
   margin-top: 15px;
   white-space: nowrap;
-  /* Prevent text from wrapping to the next line */
+
   overflow: hidden;
   /* Hide any text that overflows the container */
   text-overflow: ellipsis;
@@ -441,14 +430,7 @@ body {
   color: rgba(255, 255, 255, 0.589);
 }
 
-#btnsCntrol {
-  background-color: transparent;
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px 0;
-}
+
 
 .controls {
   background-color: transparent;
@@ -460,88 +442,19 @@ body {
 
 }
 
-.control-btn {
-  width: 35px;
-  height: 35px;
-  background-color: #333;
-  border: none;
-  font-size: 1.1rem;
-  padding: 1px 0 0 0;
-  color: white;
-  cursor: pointer;
-  border-radius: 50%;
-  margin: 2px;
-
-}
-
-#prev,
-#next {
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  background-color: transparent;
-  color: white;
-}
-
-.control-btn:hover {
-  background-color: #373737;
-}
 
 .progress-container {
   width: 100%;
   background-color: transparent;
-  height: 20px;
-  display: flex;
+  height: auto;
+  display:flex ;
   justify-content: center;
-  margin-top: 30px;
-}
-
-#current-time,
-#duration {
-  position: relative;
-  bottom: -5px;
-  margin: 5px;
-  font-size: 2rem;
-
+  flex-wrap: wrap;
 }
 
 
-#progress-bar {
-  width: 60%;
-  -webkit-appearance: none;
-  height: 3px;
-  border-radius: 10px;
-  background: linear-gradient(to right, #e83147 0%, #ffffff 0%);
-  outline: none;
-  transition: all 2s;
-}
 
-#progress-bar :hover {
-  background: white;
-}
 
-#progress-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: .6rem;
-  height: .6rem;
-  opacity: 1;
-  background-color: #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 0 0 5px #ccc2c396
-}
-
-#progress-bar::-webkit-slider-thumb:hover {
-  background-color: #e83147;
-  opacity: 1;
-  width: .7rem;
-  height: .7rem;
-  box-shadow: 0 0 0 5px #e8314749
-}
-
-#progress-bar:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 7px #ffffff8c
-}
 
 
 #mute {
@@ -568,35 +481,6 @@ body {
   align-items: center;
 }
 
-.volume-bar {
-  width: 100px;
-  height: 3px;
-  -webkit-appearance: none;
-  appearance: none;
-  background: #e83147;
-  /* Default background */
-  outline: none;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-.volume-bar::-webkit-slider-runnable-track {
-  height: 5px;
-  border-radius: 5px;
-}
-
-.volume-bar::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: .7rem;
-  height: .7rem;
-  background: #e83147;
-  /* Thumb color */
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  bottom: 3px;
-}
 
 
 
@@ -666,34 +550,10 @@ body {
 }
 
 /* ?................................................................................ */
-.que-info {
-  background-color: #333;
-  width: 95%;
-  border-radius: 10px;
-  display: flex;
-  margin-bottom: 10px;
-  text-align: left;
-}
 
 
 
-#SongName_q,
-#artistName_q {
-  background-color: transparent;
-  width: 80%;
-  font-size: 3rem;
-  font-weight: 500;
-  height: 20px;
-  display: inline-block;
-  text-align: left;
-  color: white;
-  margin-top: 20px;
-  white-space: nowrap;
-  /* Prevent text from wrapping to the next line */
-  overflow: hidden;
-  /* Hide any text that overflows the container */
-  text-overflow: ellipsis;
-}
+
 
 #artistName_q {
   font-size: .9rem;
@@ -724,10 +584,10 @@ body {
 }
 
 #songImgDesplay {
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
-  margin: 0 20px;
+width: 70px;
+  border-radius: 5px;
+  margin: 0 5px;
+  margin-bottom: 5px;
   display: inline-block;
 
 }
@@ -737,16 +597,24 @@ body {
   background-color: transparent;
   text-align: left;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 10px;
   height: auto;
 
+}
+#songNameInfo2{
+  width: 80%;
+  background-color: red;
+  text-align: left;
+  display: inline-block;
+  margin-left: 10px;
+  height: auto;
 }
 
 #SongName,
 #artistName {
   background-color: transparent;
   width: 100%;
-  font-size: 2.2rem;
+  font-size: 16px;
   font-weight: 500;
   display: inline-block;
   text-align: left;
@@ -758,7 +626,7 @@ body {
 }
 
 #artistName {
-  margin-top: 20px;
+  margin-top: 5px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.673);
 }
@@ -767,11 +635,11 @@ body {
 
 #btnsCntrol {
   background-color: transparent;
-  width: 100%;
+  width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 5px 0;
+  margin: 15px auto;
   height: auto;
 }
 
@@ -781,18 +649,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  justify-content: left;
   margin: 0 0 30px 0;
   height: auto;
 
 }
 
 .control-btn {
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   background-color: #333;
   border: none;
-  font-size: 3rem;
+  font-size: 1.8rem;
   padding: 1px 0 0 0;
   color: white;
   cursor: pointer;
@@ -803,11 +670,12 @@ body {
 
 #prev,
 #next {
-  width: 120px;
-  height: 120px;
+  width: 50px;
+  height: 50px;
   align-items: center;
   background-color: transparent;
   color: white;
+  font-size: 1.5rem;
 }
 
 .control-btn:hover {
@@ -817,25 +685,29 @@ body {
 #current-time,
 #duration {
   position: relative;
-  top: -60px;
-  margin: 15px;
-  font-size: 2rem;
+  top: 0px;
+  margin: 0px;
+  font-size: 16px;
   color: white;
+  height: 16px;
 
 }
 
 #current-time {
-  left: 80px;
+  top: 45px;
+   right: 170px;
+
 }
 
 #duration {
-  right: 80px;
+ left: 170px;
+ bottom: 150px;
 }
 
 #progress-bar {
-  width: 75%;
+  width: 380px;
   -webkit-appearance: none;
-  height: 10px;
+  height: 5px;
   border-radius: 10px;
   background: linear-gradient(to right, #e83147 0%, #ffffff 0%);
   outline: none;
@@ -897,13 +769,13 @@ body {
 }
 
 .volume-control i {
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 .volume-bar {
   margin: 50px 0;
   width: 85%;
-  height: 10px;
+  height: 5px;
   -webkit-appearance: none;
   appearance: none;
   background: #e83147;
@@ -935,7 +807,7 @@ body {
 
 #footerPart {
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -943,7 +815,7 @@ body {
   display: none;
   padding: 0 5px;
   position: sticky;
-  bottom: 150px;
+  bottom: 50px;
   padding: 30px 0;
 }
 
@@ -1010,11 +882,7 @@ body {
   text-decoration: none;
 }
 
-.playlist {
-  background-color: black;
-  display: flex;
-  width: 100%;
-}
+
 
 #left_1 {
   width: 100%;
@@ -1063,39 +931,41 @@ body {
 /* ?................................................................................ */
 .que-info {
   background-color: #333;
-  width: 90%;
-  border-radius: 30px;
+  width: 95%;
+  border-radius: 10px;
   display: flex;
-  margin-bottom: 10px;
+  margin: 20px 0;
   text-align: left;
+  justify-content: left;
+  align-items: center;
+  padding:  10px;
+
 }
 
 #songImgDesplay_q {
-  width: 150px;
-  height: 150px;
+  width: 60px;
   background-color: rgba(107, 93, 68, 0);
-  margin: 20px;
   border-radius: 10px;
+  margin-right: 10px;
 }
 
 #SongName_q,
 #artistName_q {
   background-color: transparent;
   width: 80%;
-  font-size: 2.5rem;
+  font-size: 20px;
   font-weight: 500;
+  line-height: 25px;
   display: inline-block;
   text-align: left;
   color: white;
   height: auto;
-  margin-top: 50px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 #artistName_q {
-  margin: 10px 0;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.655);
 }
@@ -1239,24 +1109,25 @@ body {
   width: 100%;
   height: 70px;
   background-color: #000000;
-  position: sticky;
-  bottom: 0;
   display: flex;
   justify-content: space-evenly;
   z-index: 1000;
 }
 
 .btnsShow {
-  height: 150px;
+  height: auto;
   background-color: #1a1a1a;
   position: sticky;
-  bottom: 170px;
+  bottom: 70px;
   display: none;
   align-items: center;
   justify-content: center;
   padding: 0;
 }
-
+.music-btm{
+  position: sticky;
+  bottom: 0px;
+}
 .footer-bottom p {
   font-size: 1rem;
 }
@@ -1284,7 +1155,7 @@ body {
   justify-content: center;
   background-color: black;
   width: 100%;
-  height: 80px;
+  height: 60px;
   padding: 0 0px;
   display: none;
   position: sticky;

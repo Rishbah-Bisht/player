@@ -290,8 +290,12 @@ const mainSecyionMusicLibary = document.querySelector('.mainSecyionMusicLibary')
 
 
 
-
-
+console.log(xo.children)
+function emptydiv(){
+    if(xo.children.length === 0){
+        console.log('kiii')
+    }
+}
 
 
 
@@ -432,6 +436,9 @@ searchBox.addEventListener('input', () => {
             song.style.display = ''; // Show matching song
         } else {
             song.style.display = 'none'; // Hide non-matching song
+            if(xo.children.length === 0){
+                console.log('kiii')
+            }
         }
     });
 });
