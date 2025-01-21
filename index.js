@@ -155,10 +155,10 @@ function loadSong(index) {
 
     // Automatically start playback after loading metadata
     audio.play().then(() => {
-        playButton.innerHTML = '<i class="fa-solid fa-pause" style="color: #ffffff;"></i>'; // Pause icon
+        playButton.innerHTML = '<i class="fa-solid fa-pause" ></i>'; // Pause icon
     }).catch((error) => {
 
-        playButton.innerHTML = '<i class="fa-solid fa-play" style="color: #ffffff;"></i>'; // Play icon
+        playButton.innerHTML = '<i class="fa-solid fa-play" ></i>'; // Play icon
     });
 }
 
@@ -183,14 +183,14 @@ function highlightActiveSong(index) {
 function togglePlayPause() {
     if (audio.paused) {
         audio.play().then(() => {
-            playButton.innerHTML = '<i class="fa-solid fa-pause" style="color: #ffffff;"></i>'; // Pause icon
+            playButton.innerHTML = '<i class="fa-solid fa-pause" ></i>'; // Pause icon
         }).catch((error) => {
             console.error("Playback failed:", error);
-            playButton.innerHTML = '<i class="fa-solid fa-play" style="color: #ffffff;"></i>'; // Play icon (fallback)
+            playButton.innerHTML = '<i class="fa-solid fa-play" ></i>'; // Play icon (fallback)
         });
     } else {
         audio.pause();
-        playButton.innerHTML = '<i class="fa-solid fa-play" style="color: #ffffff;"></i>'; // Play icon
+        playButton.innerHTML = '<i class="fa-solid fa-play" ></i>'; // Play icon
     }
 }
 
@@ -201,7 +201,7 @@ function changeSong(direction) {
     currentSongIndex += direction;
     if (currentSongIndex < 0) currentSongIndex = playlistItems.length - 1;
     if (currentSongIndex >= playlistItems.length) currentSongIndex = 0;
-    playButton.innerHTML = '<i class="fa-solid fa-play" style="color: #ffffff;"></i>';
+    playButton.innerHTML = '<i class="fa-solid fa-play" ></i>';
     loadSong(currentSongIndex);
 }
 
@@ -239,13 +239,13 @@ function formatTime(seconds) {
 function toggleMute(mutebtnbtn) {
     audio.muted = !audio.muted;
     if (audio.muted) {
-        mutebtn.innerHTML = '<i class="fa-solid fa-volume-xmark" style="color: #ffffff;"></i>';
+        mutebtn.innerHTML = '<i class="fa-solid fa-volume-xmark" ></i>';
         volumeBar.value = 0;
         volumeBar.style.background = `linear-gradient(to right,#FA586A${0}%, #ccc ${0}%)`;
 
     }
     else {
-        mutebtn.innerHTML = '<i class="fa-solid fa-volume-low" style="color: #ffffff;"></i>';
+        mutebtn.innerHTML = '<i class="fa-solid fa-volume-low" ></i>';
         volumeBar.value = 0.5;
         const progress = (volumeBar.value / volumeBar.max) * 100;
         volumeBar.style.background = `linear-gradient(to right,#FA586A ${progress}%, #ccc ${progress}%)`;
@@ -260,7 +260,7 @@ function updateVolume(event, mutebtn) {
     audio.volume = volumeBar.value;
     volumeBar.style.background = `linear-gradient(to right, #FA586A ${progress}%, #ccc ${progress}%)`;
     if (audio.volume == 0) {
-        mutebtn.innerHTML = '<i class="fa-solid fa-volume-xmark" style="color: #ffffff;"></i>';
+        mutebtn.innerHTML = '<i class="fa-solid fa-volume-xmark" ></i>';
     }
 }
 function loopPlaylist() {
